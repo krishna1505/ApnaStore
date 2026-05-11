@@ -17,12 +17,7 @@ connectCloudinary()
 // middlewares
 app.use(express.json())
 app.use(cors({
-    origin: [
-        "http://localhost:4000",
-        "https://apna-store-frontend-self.vercel.app",
-        "https://apna-store-admin-six.vercel.app"
-    ],
-    credentials: true
+ 
 }))
 
 
