@@ -19,7 +19,7 @@ app.use(express.json())
 app.use(cors({
   origin: [
     "https://apna-store-front.vercel.app",
-    "https://apna-store-admin.vercel.app"
+    "https://apna-store-admin-one.vercel.app"
   ],
   credentials: true
 }));
