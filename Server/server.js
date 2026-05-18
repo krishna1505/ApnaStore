@@ -17,12 +17,8 @@ connectCloudinary()
 // middlewares
 app.use(express.json())
 app.use(cors({
-  origin: [
-    "https://apna-store-front.vercel.app",
-    "https://apna-store-admin-one.vercel.app"
-  ],
-  credentials: true
-}));
+ 
+}))
 
 
 app.get("/",(req,res)=>{
@@ -35,7 +31,6 @@ app.use('/api/product',productRouter)
 app.use('/api/cart',cartRouter)
 app.use('/api/order',orderRouter)
 
-// app.listen(port,()=>{
-//     console.log("server started");
-// })
-export default app;
+app.listen(port,()=>{
+    console.log("server started");
+})
