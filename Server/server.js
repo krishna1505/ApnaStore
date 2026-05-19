@@ -17,8 +17,14 @@ connectCloudinary()
 // middlewares
 app.use(express.json())
 app.use(cors({
- 
-}))
+    origin: [
+        process.env.FRONTEND_URL,
+        process.env.ADMIN_URL,
+        "http://localhost:5173", // frontend localhost
+        "http://localhost:5174"  // admin localhost
+    ],
+    credentials: true
+}));
 
 
 app.get("/",(req,res)=>{
