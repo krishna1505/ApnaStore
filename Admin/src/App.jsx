@@ -16,7 +16,8 @@ import 'react-toastify/dist/ReactToastify.css'
 
 
 // Backend URL
-export const backend_url = "http://localhost:4000"
+// Backend URL
+export const backend_url = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000"
 
 // Currency
 export const currency = '₹'
